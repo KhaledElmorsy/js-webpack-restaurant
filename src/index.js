@@ -1,10 +1,4 @@
-import './style.css'
-import pizza from './pizza.jpeg'
+import './assets/style.css'
+import drawMain from './modules/drawMain';
 
-const content = document.querySelector('#content')
-console.dir(content)
-
-const pizzaPic = document.createElement('img');
-pizzaPic.src = pizza;
-
-content.appendChild(pizzaPic)
+drawMain();

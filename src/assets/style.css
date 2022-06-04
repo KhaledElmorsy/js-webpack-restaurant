@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+@font-face {
+    font-family: 'Fresh Fruit';
+    src: url('Fresh Fruit.ttf');
+}
+
+:root{
+    outline: 5px grey;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+
+
+}
+
 h1 {
-    font-size: 40px;
+    width: 100%;
+    font-size: 44px;
+    font-family: 'Fresh Fruit', sans-serif;
+
+    place-items: center;
+}
+
+header .logo{
+    color: tomato;
+}
+
+.tab-container{
+    display: flex;
+    gap:20px;
+}
+
+.tab-button{
+    background-color: tomato;
+    color: white;
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+
+    display: grid;
+    place-items: center;
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
 }

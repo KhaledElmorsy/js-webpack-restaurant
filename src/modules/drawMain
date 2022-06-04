@@ -1,0 +1,44 @@
+import tabGetter from "./tabGetter";
+
+export default function () {
+    const content = document.getElementById('content');
+    const header = document.createElement('header')
+    header.innerHTML = '<h1>Welcome to <span class="logo">Pizza Pizza Pizzaaaa!<span><h1>'
+
+    content.appendChild(header)
+
+    const tabContainer = document.createElement('div')
+    tabContainer.classList.add('tab-container')
+
+    function tabFactory(title) {
+        let tab = document.createElement('div')
+        tab.classList.add('tab-button')
+        tab.innerText = title;
+        tab.onclick = switchTabs;
+
+        return tab;
+    }
+
+    var tabs = {};
+    tabs.home = tabFactory('Home');
+    tabs.menu = tabFactory('Menu');
+    tabs.about = tabFactory('About');
+
+    for (let tabname in tabs) tabContainer.appendChild(tabs[tabname])
+
+    content.append(tabContainer)
+
+    const main = document.createElement('div')
+    main.classList.add('main-body');
+
+    function switchTabs(e) {
+        main.innerHTML ="";
+
+        let tabName = e.target.innerText.toLowerCase();
+        main.appendChild(tabGetter(tabName));
+
+        console.log('Switching tabs to' + tabName)
+    }
+
+    content.appendChild(main)
+}
