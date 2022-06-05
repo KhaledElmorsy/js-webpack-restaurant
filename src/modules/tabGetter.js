@@ -10,5 +10,5 @@ let tabContents = {
 }
 
 export default function (tabName) {
-    return tabContents[tabName];
+    return tabContents[tabName]();
 }

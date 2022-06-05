@@ -35,10 +35,9 @@ export default function () {
         main.innerHTML ="";
 
         let tabName = e.target.innerText.toLowerCase();
-        main.appendChild(tabGetter(tabName));
-
-        console.log('Switching tabs to' + tabName)
+        main.append(...tabGetter(tabName));
     }
 
+    tabs.home.click()
     content.appendChild(main)
 }
