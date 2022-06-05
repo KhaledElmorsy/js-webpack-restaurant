@@ -2,6 +2,10 @@
     font-size: 25px;
 }
 
+[data-tab='home'] img{
+    width: 90%;
+}
+
 [data-tab='home'] li{
     font-weight: 700;
 }
