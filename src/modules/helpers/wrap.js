@@ -8,7 +8,9 @@ export default function(el, titleText){
         wrapper.appendChild(title)
     }
 
-    wrapper.appendChild(el)
+    // Can take arrays of elements
+    if (el[0]) for(let el of a) wrapper.appendChild(el);
+    else wrapper.appendChild(el);
     
     return wrapper;
 }
