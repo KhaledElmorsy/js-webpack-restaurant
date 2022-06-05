@@ -1,4 +1,4 @@
-import tabGetter from "./tabGetter";
+import tabGetter from "./helpers/tabGetter";
 
 export default function () {
     const content = document.getElementById('content');
@@ -36,6 +36,7 @@ export default function () {
 
         let tabName = e.target.innerText.toLowerCase();
         main.append(...tabGetter(tabName));
+        main.setAttribute('data-tab', tabName)
     }
 
     tabs.home.click()

@@ -1,6 +1,6 @@
-import home from './home.js'
-import about from './about.js'
-import menu from './menu.js'
+import home from '../tabs/home.js'
+import about from '../tabs/about.js'
+import menu from '../tabs/menu.js'
 
 
 let tabContents = {
