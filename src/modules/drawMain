@@ -39,6 +39,6 @@ export default function () {
         main.setAttribute('data-tab', tabName)
     }
 
-    tabs.menu.click()
+    tabs.home.click()
     content.appendChild(main)
 }
