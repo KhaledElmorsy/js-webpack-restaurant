@@ -1,19 +1,16 @@
-import tabGetter from "./helpers/tabGetter";
+import tabGetter from './helpers/tabGetter';
+import makeEl from './helpers/elementMaker';
 
 export default function () {
     const content = document.getElementById('content');
-    const header = document.createElement('header')
-    header.innerHTML = '<h1>Welcome to <span class="logo">Pizza Pizza Pizzaaaa!<span><h1>'
+    const header = makeEl('header', '<h1>Welcome to <span class="logo">Pizza Pizza Pizzaaaa!<span><h1>');
 
     content.appendChild(header)
 
-    const tabContainer = document.createElement('div')
-    tabContainer.classList.add('tab-container')
+    const tabContainer = makeEl('div',null,{class:'tab-container'})
 
     function tabFactory(title) {
-        let tab = document.createElement('div')
-        tab.classList.add('tab-button')
-        tab.innerText = title;
+        let tab = makeEl('div',title,{class:'tab-button'})
         tab.onclick = switchTabs;
 
         return tab;
@@ -28,8 +25,7 @@ export default function () {
 
     content.append(tabContainer)
 
-    const main = document.createElement('div')
-    main.classList.add('main-body');
+    const main = makeEl('div',null,{class:'main-body'})
 
     function switchTabs(e) {
         main.innerHTML ="";
