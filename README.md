@@ -10,4 +10,9 @@ I made this page to practice using webpack, and to use modules to write more eff
 - I made a tab switching module that imports the tab modules, places them in objects, and gets passed a string with the tab name and runs the appropriate module, returning its array of contents which get appended in the main script.
 - I divided general and tab specific assets into a folder heirarchy for easier navigation and importing
 
+## Fun Discovery
+**Fonts** play a huge part in making a website look **right**. It's almost like we've grown to subconciously identify 'professional' websites, and fonts play a significant role in pushing a website beyond the uncanncy valley of legitemacy.
+
+The general font I used in this webpage fits the theme so well that it manages to make the website immediately register as *legit* in our minds, even though it's so barebones.
+
 [## Live Demo](https://kelmorsy.github.io/js-webpack-restaurant/)
