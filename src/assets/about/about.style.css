@@ -1,0 +1,8 @@
+[data-tab = 'about'] img{
+    width: 90%;
+}
+
+[data-tab = 'about'] .contact p{
+    margin: 10px 0px;
+    text-align: center;
+}
